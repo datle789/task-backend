@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(cors({
-    origin: ["http://localhost:3000", "https://task-app.onrender.com"],
+    origin: ["https://task-app.onrender.com"],
 }))
 
 app.use("/api/tasks", route)
