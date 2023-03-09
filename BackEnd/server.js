@@ -15,13 +15,13 @@ const app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// app.use(cors({
-//     origin: ["https://task-app.onrender.com"],
-// }))
-
 app.use(cors({
-    origin: ["https://task-frontend-omega.vercel.app"],
+    origin: ["https://task-app.onrender.com"],
 }))
+
+// app.use(cors({
+//     origin: ["https://task-frontend-omega.vercel.app"],
+// }))
 
 
 app.use("/api/tasks", route)
